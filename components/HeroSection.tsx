@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import type { Variants, Transition } from 'framer-motion';
 import { colors } from '@/lib/colors';
+import { useRouter } from "next/navigation";
 
 // Animation variants with proper typing
 const floatVariants: Variants = {
@@ -18,6 +19,8 @@ const floatVariants: Variants = {
     }
   }
 };
+
+
 
 const pulseVariants: Variants = {
   animate: {
@@ -38,6 +41,7 @@ const spinTransition: Transition = {
 };
 
 export default function HeroSection() {
+  const router = useRouter();
   return (
     <div className={`min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden bg-gradient-to-br ${colors.bg.primary} ${colors.text.primary}`}>
 
@@ -204,6 +208,14 @@ export default function HeroSection() {
             captivate audiences and elevate their message.
           </motion.p>
         </div>
+
+        <motion.button
+              className="px-8 py-4 bg-gradient-to-r from-pink-500 to-violet-500 text-white font-semibold rounded-xl hover:from-pink-600 hover:to-violet-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-pink-500/25"
+              whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(236,72,153,0.3)" }}
+              onClick={() => router.push("/edits")}
+            >
+              Dive into my Edits
+            </motion.button>
 
         {/* Stats section */}
         <motion.div

@@ -100,7 +100,7 @@ const categoryData: Record<string, CategoryData> = {
         link: "https://www.instagram.com/reel/DMfm6xCg_0K/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
       }
     ],
-    externalLink: "https://www.instagram.com/funvlogprofile",
+    externalLink: "https://www.instagram.com/naqiyaaa_?igsh=YzAyMmc1ODhqdTJ6",
     gradient: "from-pink-500 to-violet-500",
     accentColor: "pink"
   },
@@ -127,7 +127,7 @@ const categoryData: Record<string, CategoryData> = {
         description: "This was a series, filled with proper guidelines on how to improve in your wealth"
       }
     ],
-    externalLink: "https://www.youtube.com/@motivationbusiness",
+    externalLink: "https://www.instagram.com/naqiyaaa_?igsh=YzAyMmc1ODhqdTJ6",
     gradient: "from-blue-500 to-cyan-500",
     accentColor: "blue"
   },
@@ -146,7 +146,7 @@ const categoryData: Record<string, CategoryData> = {
         link: "https://www.instagram.com/reel/DF5EZgcyXJm/"
       }
     ],
-    externalLink: "https://www.instagram.com/fashionprofile",
+    externalLink: "https://www.instagram.com/naqiyaaa_?igsh=YzAyMmc1ODhqdTJ6",
     gradient: "from-rose-500 to-pink-500",
     accentColor: "rose"
   },
@@ -180,7 +180,7 @@ const categoryData: Record<string, CategoryData> = {
         link: "https://www.instagram.com/reel/DJ0_nloIVE2/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
       }
     ],
-    externalLink: "https://www.youtube.com/@tutorialproducts",
+    externalLink: "https://www.instagram.com/naqiyaaa_?igsh=YzAyMmc1ODhqdTJ6",
     gradient: "from-emerald-500 to-teal-500",
     accentColor: "emerald"
   },
@@ -204,7 +204,7 @@ const categoryData: Record<string, CategoryData> = {
         link: "https://drive.google.com/file/d/12Hc79XZ7VEzb_HDBF9waHm4Tj-VTV3jo/view?usp=drive_link"
       }
     ],
-    externalLink: "https://www.instagram.com/itradsprofile",
+    externalLink: "https://www.instagram.com/naqiyaaa_?igsh=YzAyMmc1ODhqdTJ6",
     gradient: "from-orange-500 to-red-500",
     accentColor: "orange"
   },
@@ -223,7 +223,7 @@ const categoryData: Record<string, CategoryData> = {
         link: "https://www.instagram.com/reel/DH5zeVroatW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
       }
     ],
-    externalLink: "https://www.instagram.com/stopmotionmagic",
+    externalLink: "https://www.instagram.com/naqiyaaa_?igsh=YzAyMmc1ODhqdTJ6",
     gradient: "from-purple-500 to-indigo-500",
     accentColor: "purple"
   },
@@ -237,7 +237,7 @@ const categoryData: Record<string, CategoryData> = {
         link: "https://www.linkedin.com/posts/khandwalanaqiya019240_dop-onsetlife-lowbudgethighimpact-activity-7320692669272215552-ZAbj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAD9xMocBIbd7etcL04BYnVrIPmOMvOTRpHk"
       }
     ],
-    externalLink: "https://www.instagram.com/btsprofile",
+    externalLink: "https://www.instagram.com/naqiyaaa_?igsh=YzAyMmc1ODhqdTJ6",
     gradient: "from-amber-500 to-yellow-500",
     accentColor: "amber"
   },
