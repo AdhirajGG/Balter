@@ -4,7 +4,7 @@
 
 import { motion } from 'framer-motion';
 import type { Variants, Transition } from 'framer-motion';
-import { Linkedin, Instagram, Github, Phone } from "lucide-react";
+import { Linkedin, Instagram, Github, Phone, Youtube, MailIcon } from "lucide-react";
 import { colors } from '@/lib/colors';
 
 // Animation variants with proper typing
@@ -41,7 +41,7 @@ const spinTransition: Transition = {
 const ContactPage = () => {
   return (
     <div className={`min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden bg-gradient-to-br ${colors.bg.primary} ${colors.text.primary}`}>
-      
+
       {/* Animated Background Elements - Fixed z-index and pointer events */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
 
@@ -56,10 +56,10 @@ const ContactPage = () => {
           <motion.div
             key={i}
             className={`absolute ${star.size} ${star.color} rounded-full opacity-80 pointer-events-none`}
-            style={{ 
-              top: star.top, 
-              left: star.left, 
-              right: star.right, 
+            style={{
+              top: star.top,
+              left: star.left,
+              right: star.right,
               bottom: star.bottom,
               zIndex: -1
             }}
@@ -78,10 +78,10 @@ const ContactPage = () => {
           <motion.div
             key={i}
             className={`absolute ${plus.color} opacity-60 ${plus.size} font-light pointer-events-none`}
-            style={{ 
-              top: plus.top, 
-              left: plus.left, 
-              right: plus.right, 
+            style={{
+              top: plus.top,
+              left: plus.left,
+              right: plus.right,
               bottom: plus.bottom,
               zIndex: -1
             }}
@@ -157,7 +157,7 @@ const ContactPage = () => {
 
       {/* Main Content - Explicit z-index to ensure it's above background */}
       <div className="max-w-4xl w-full text-center relative z-10">
-        
+
         {/* Header Section */}
         <motion.div
           className="mb-16 relative z-20"
@@ -185,7 +185,7 @@ const ContactPage = () => {
 
         {/* Contact Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto relative z-20">
-          
+
           {/* Phone Card */}
           <motion.div
             className={`${colors.bg.card.main} backdrop-blur-sm p-8 rounded-2xl border ${colors.border.primary} transition-all duration-300 ${colors.hover.card.translate} ${colors.hover.card.border} hover:drop-shadow-[0_15px_35px_rgba(45,212,191,0.25)] relative group`}
@@ -198,8 +198,8 @@ const ContactPage = () => {
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-pink-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"
             />
-            
-            <motion.div 
+
+            <motion.div
               className="flex items-center justify-center mb-6"
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
@@ -208,13 +208,13 @@ const ContactPage = () => {
                 <Phone className="w-8 h-8 text-pink-400" />
               </div>
             </motion.div>
-            
+
             <h3 className="text-2xl font-bold mb-4">Phone</h3>
-            <a 
+            <a
               href="tel:+918527973777"
               className="text-3xl font-semibold tracking-wide bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent hover:from-pink-300 hover:to-purple-300 transition-all duration-300 relative z-40"
             >
-              +91 8527973777
+              +91 8767216178
             </a>
           </motion.div>
 
@@ -230,8 +230,8 @@ const ContactPage = () => {
             <motion.div
               className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"
             />
-            
-            <motion.div 
+
+            <motion.div
               className="flex items-center justify-center mb-6"
               whileHover={{ scale: 1.1 }}
               transition={{ type: "spring", stiffness: 300 }}
@@ -240,31 +240,39 @@ const ContactPage = () => {
                 <span className="text-3xl">🌐</span>
               </div>
             </motion.div>
-            
+
             <h3 className="text-2xl font-bold mb-6">Social Links</h3>
             <div className="flex gap-8 items-center justify-center">
               {[
-                { 
-                  icon: Linkedin, 
-                  href: "https://linkedin.com", 
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/khandwalanaqiya019240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
                   color: "text-blue-500 hover:text-blue-400",
                   hoverBg: "hover:bg-blue-500/20",
                   delay: 1.0,
                   label: "LinkedIn Profile"
                 },
-                { 
-                  icon: Instagram, 
-                  href: "https://instagram.com", 
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/naqiyaaa_?igsh=YzAyMmc1ODhqdTJ6",
                   color: "text-pink-500 hover:text-pink-400",
                   hoverBg: "hover:bg-pink-500/20",
                   delay: 1.1,
                   label: "Instagram Profile"
                 },
-                { 
-                  icon: Github, 
-                  href: "https://github.com", 
-                  color: "text-gray-400 hover:text-gray-300",
-                  hoverBg: "hover:bg-gray-500/20",
+                {
+                  icon: Youtube,
+                  href: "https://youtube.com/@thenaqiya?si=oSLgU74jHQ-fqnvn",
+                  color: "text-red-800 hover:text-red-500",
+                  hoverBg: "hover:bg-red-500/20",
+                  delay: 1.2,
+                  label: "GitHub Profile"
+                },
+                {
+                  icon: MailIcon,
+                  href: "https://mail.google.com/mail/?view=cm&fs=1&to=khandwalanaqiya@gmail.com",
+                  color: "text-green-800 hover:text-green-500",
+                  hoverBg: "hover:bg-green-500/20",
                   delay: 1.2,
                   label: "GitHub Profile"
                 }
